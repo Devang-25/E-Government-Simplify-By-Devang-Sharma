@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="citizen home page" />
+
+<title>Citizen home</title>
+<link rel="shortcut icon" href="favicon.ico" />
+
+
+<style type="text/css"> 
+
+body{
+	font:sans-serif;
+	background-image: url("digitalindia_edited.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+#bottomnav{
+	font-family:sans-serif;
+	background-color: white;
+	text-align: center;
+	
+}
+
+.marquee1{
+	line-height: 30px;
+	max-height: 35px;
+	float: right;
+	width: 100%;
+}
+
+.marquee1 b{
+	color:;
+	margin:0px 10px;	
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font:sans-serif;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	font: sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: red;
+}
+
+h1 {
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+	font-family: Trebuchet MS;
+	font-size: 40px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: white;
+	border: 2px solid black;
+    padding: 10px 10px;
+	width: 100px;
+    cursor: pointer;
+	text-align: center;
+}
+
+</style>
+
+
+
+</head>
+
+
+
+<body >
+
+
+
+
+
+<div align="center" name="header" >
+<h1> Citizen Home</h1>
+
+<marquee scrollamount="10"  behavior="scroll" class="marquee1" >
+<b><font size="5" face="sans-serif" color="red">"Welcome to Citizen Services Home"</font></b>
+</marquee>
+
+</div>
+
+<hr>
+
+<div class="topnav" >
+
+<ul>
+<li><a href="citizenhome.html" class="active"><font face="sans-serif" size="4">Home</font></a></li>
+
+<li class="dropdown">
+    <a href="#" class="dropbtn"><font size="4" face="sans-serif">Services</font></a>
+    <div class="dropdown-content">
+    <a href="viewtrains.html">View  Available Trains</a>
+    <a href="booktrains.html">Book Trains</a>
+    <a href="viewmovies.jsp">View Movies</a>
+	<a href="bookmovies.html">Book Movies</a>
+    </div>
+</li>
+
+<li><a href="citizenfeedback.html"><font face="sans-serif" size="4">Feedback</font></a></li>
+<li><a href="about.html"><font face="sans-serif" size="4">About</font></a></li>
+
+<li class="dropdown" style="float: right;">
+    <a href="#" class="dropbtn"><font size="4" face="sans-serif">Welcome! </font></a>
+    <div class="dropdown-content">
+    <a href="viewprofile.jsp">Profile</a>
+	<form action="citizenlogout" method="post">
+	<input type="submit" value="Logout"/></form>
+    </div>
+</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+<div name="body">
+
+</div>
+
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+
+
+<div name="bottomnav"   id="bottomnav">
+
+<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="contactus.html">Contact us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="faq.html">F.A.Q.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="privacypolicy.html">Privacy Policy</a>
+
+</div>
+
+
+<div name="footer">
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

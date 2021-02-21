@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Movies</title>
+
+<style>
+
+
+
+label{
+    display: inline-block;
+	overflow: hidden;
+    float: center;
+    clear: left;
+    width: 150px;
+    text-align: left;
+	
+}
+
+input,select {
+  display: inline-block;
+  float: center;
+  clear: right;
+  text-align: left;
+}
+
+.top{
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-family:Ubuntu;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	font-family: Ubuntu;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+label{
+    display: inline-block;
+	overflow: hidden;
+    float: center;
+    clear: left;
+    width: 150px;
+    text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+input{
+	width: 150px;
+	padding: 5px 5px;
+	display: inline-block;
+	float: center;
+	clear: right;
+	text-align: left;
+	border: 1px solid black;
+    border-radius: 4px;
+	
+}
+
+input[type=text]:focus 
+{
+	border: 3px solid yellow;
+}
+
+
+select{
+	width: 90px;
+	display: inline-block;
+	float: center;
+	clear: right;
+	text-align: left;
+	border: 1px solid black;
+    border-radius: 4px
+}
+
+select:focus
+{
+	border: 2px solid yellow;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: white;
+	border: 2px solid black;
+    padding: 10px 10px;
+	width: 90px;
+    cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+
+
+</style>
+
+</head>
+
+<body >
+
+<div class="topnav" >
+
+<ul>
+<li><a href="adminhome.html" ><font face="Ubuntu" size="4">Home</font></a></li>
+
+<li class="dropdown">
+    <a href="#" class="dropbtn" style="background-color:red;"><font size="4" face="Ubuntu">Add Services</font></a>
+    <div class="dropdown-content">
+    <a href="addtrains.html">Add Trains</a>
+    <a href="addmovies.html">Add Movies</a>
+    <a href="addmeals.html">Add Meals</a>
+	<a href="addmedicines.html">Add Medicines</a>
+	<a href="viewordermeals.jsp">View Meal Orders</a>
+	<a href="viewordermedicines.jsp">View Medicine Orders</a>
+	<a href="viewbooktrains.jsp">View Train Bookings</a>
+	<a href="viewbookmovies.jsp">View Movie Bookings</a>
+	<a href="approveusers.jsp">Approve Users</a>
+    </div>
+</li>
+
+<li><a href="viewfeedback.jsp"><font face="Ubuntu" size="4">View Feedback</font></a></li>
+
+<li class="dropdown" style="float: right;">
+    <a href="#" class="dropbtn"><font size="4" face="Ubuntu">Welcome ADMIN!	</font></a>
+    <div class="dropdown-content">
+	<a href="index.html">Logout</a>
+    </div>
+</li>
+
+</ul>
+</div>
+
+<br >
+<h1 align="center">Add Movie</h1>
+<br >
+
+<div class="body" align="center">
+<form action="addmovies" method="POST">
+<label>Movie Name:</label><input type="text" maxlength="20"  name="moviename" required autofocus />
+<br >
+<br >
+<label>About Movie:</label><textarea rows="3" cols="22" name="info" placeholder="Enter about movie" ></textarea>
+<br><br>
+
+<label>City: </label>
+<select name ="city">
+<option value="-1">-Cities-</option>
+<option value="hyderabad">Hyderabad</option>
+<option value="mumbai">Mumbai</option>
+<option value="chennai">Chennai</option>
+<option value="bengalore">Bengalore</option>
+<option value="delhi">Delhi</option>
+<option value="kokalta">Kolkata</option>
+<option value="nagpur">Nagpur</option>
+</select>
+<br><br>
+
+<label>Theaters: </label>
+<input style="width: 45px;" type="checkbox" name="pvr" value="pvr">PVR
+<input style="width: 45px;" type="checkbox" name="imax" value="imax">Imax
+<input style="width: 45px;" type="checkbox" name="inox" value="inox">Inox
+<input style="width: 45px;" type="checkbox" name="cinemax" value="cinemax">Cinemax
+<input style="width: 45px;" type="checkbox" name="cinepolis" value="cinepolis">Cinepolis
+<input style="width: 45px;" type="checkbox" name="asian" value="asian">Asian
+<input style="width: 45px;" type="checkbox" name="bigcinema" value="big cinema">Big Cinema
+<input style="width: 45px;" type="checkbox" name="cineplanet" value="cineplanet">Cineplanet
+<br >
+<br >
+
+
+<label>Show Timings: </label>
+<input style="width: 45px;" type="checkbox" name="11" value="11:00 AM">11:00 AM
+<input style="width: 45px;" type="checkbox" name="2" value="2:00 PM">2:00 PM
+<input style="width: 45px;" type="checkbox" name="6" value="6:00 PM">6:00 PM
+<input style="width: 45px;" type="checkbox" name="9" value="9:00 PM">9:00 PM
+<br >
+<br >
+
+<label>Availability: </label>
+<input style="width: 45px;" type="radio" name="avail" value="yes">Yes &nbsp;
+<input style="width: 45px;" type="radio" name="avail" value="no">No
+<br><br>
+
+<input  type="submit"  value="Add/Update" style="width:150px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" />
+
+</form>
+
+<hr >
+
+
+
+</div>
+
+</body>
+
+</html>

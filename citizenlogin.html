@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#header{
+    color:white;
+    text-align:center;
+}
+
+body
+{
+	background-image: url("digitalindia_edited.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+input{
+	width: 200px;
+	padding: 5px 5px;
+	display: inline-block;
+	float: center;
+	clear: right;
+	text-align: left;
+	border: 1px solid black;
+    border-radius: 4px;
+	
+}
+
+input[type=text]:focus 
+{
+	border: 3px solid yellow;
+}
+
+
+select{
+	width: 150px;
+	display: inline-block;
+	float: center;
+	clear: right;
+	text-align: left;
+	border: 1px solid black;
+    border-radius: 4px
+}
+
+select:focus
+{
+	border: 2px solid yellow;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: white;
+	border: 2px solid black;
+    padding: 10px 10px;
+	width: 90px;
+    cursor: pointer;
+	text-align: center;
+	
+}
+
+label
+{
+	float: center;
+	clear: right;
+}
+
+sup
+{
+	color: red;
+}
+
+#bottomnav{
+	font-family:"Trebuchet MS", arial, sans-serif;
+	font-size:17px;
+	background-color: white;
+	text-align: center;
+
+}
+
+</style>
+
+<title>Login</title>
+</head>
+<body >
+
+<div id="header">
+<font face="Trebuchet MS" size = "5"><h1>CITIZEN SERVICES</h1></font>
+</div>
+<div align="center">
+<h2>Enter your credentials</h2>
+<form name="myform" action="citizenlogin" method="post">
+
+<label>Email ID<sup>*</sup>:</label>
+<input type="text" name="email" required>
+<br><br>
+<label>Password<sup>*</sup>:</label>
+<input type="password" name="password" required>
+<br><br>
+<label>Category<sup>*</sup>:</label> 
+<select  name="category"  >
+<option value="citizen" selected>Citizen</option>
+<option value="seniorcitizen">Senior Citizen</option>
+</select>
+</h3>
+<br><br>
+<input type="Submit" value="Login">
+</form>
+<br>
+<center><a href = "Forgot.html">Forgot Password?</a></center>
+</div>
+<br >
+<br >
+<br >
+
+<div name="bottomnav"   id="bottomnav">
+
+<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="contactus.html">Contact us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="faq.html">F.A.Q.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="privacypolicy.html">Privacy Policy</a>
+
+</div>
+
+
+
+</body>
+</html>
+
+
+

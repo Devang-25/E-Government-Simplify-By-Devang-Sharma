@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Login</title>
+
+<style>
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#header{
+    color:white;
+    text-align:center;
+}
+
+input{
+	width: 200px;
+	padding: 5px 5px;
+	display: inline-block;
+	float: center;
+	clear: right;
+	text-align: left;
+	border: 1px solid black;
+    border-radius: 4px;
+	
+}
+
+input[type=text]:focus 
+{
+	border: 3px solid yellow;
+}
+
+label
+{
+	float: center;
+	clear: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+body
+{
+	text-align: center;
+	background-image: url("admin2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	color: green;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: white;
+	border: 2px solid black;
+    padding: 10px 10px;
+	width: 90px;
+    cursor: pointer;
+	text-align: center;
+	
+}
+
+
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+
+<h1>Admin Login</h1>
+
+
+<div id="form" align="center">
+<h2>Enter your credentials</h2><br>
+
+<form name="myform" action="adminlogin" method="post">
+<label>Username</label>&nbsp
+<input type="text" name="username" required>
+<br><br>
+<label>Password</label>&nbsp
+<input type="password" name="password" required>
+<br>
+</h3>
+<br>
+<input type="Submit" value="Login">
+</form>
+<br>
+<a href = "Forgot.html">Forgot Password?</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>View Trains</title>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font:sans-serif;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	font: sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+	color: white;
+    text-shadow: 2px 2px 4px #000000;
+	font-family: Trebuchet MS;
+	font-size: 40px;
+	text-align: center;
+}
+
+body{
+	font:sans-serif;
+	background-image: url("trains2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+label{
+    display: inline-block;
+	overflow: hidden;
+    float: center;
+    clear: left;
+    width: 150px;
+    text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+input{
+	width: 150px;
+	padding: 5px 5px;
+	display: inline-block;
+	float: center;
+	clear: right;
+	text-align: left;
+	border: 1px solid black;
+    border-radius: 4px;
+	
+}
+
+input[type=text]:focus 
+{
+	border: 3px solid yellow;
+}
+
+
+select{
+	width: 150px;
+	display: inline-block;
+	float: center;
+	clear: right;
+	text-align: left;
+	border: 1px solid black;
+    border-radius: 4px
+}
+
+select:focus
+{
+	border: 2px solid yellow;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: white;
+	border: 2px solid black;
+    padding: 10px 10px;
+	width: 300px;
+    cursor: pointer;
+	text-align: center;
+}
+
+#bottomnav{
+	font-family:sans-serif;
+	background-color: white;
+	text-align: center;
+	
+}
+</style>
+
+
+</head>
+<body>
+
+<h1 >View Available Trains</h1>
+
+<div class="topnav" >
+
+<ul>
+<li><a href="citizenhome.html" ><font face="sans-serif" size="4">Home</font></a></li>
+
+<li class="dropdown">
+    <a href="#" class="dropbtn" style="background-color:red;" ><font size="4" face="sans-serif">Services</font></a>
+    <div class="dropdown-content">
+    <a href="viewtrains.html">View  Available Trains</a>
+    <a href="booktrains.html">Book Trains</a>
+    <a href="viewmovies.jsp">View Movies</a>
+	<a href="bookmovies.html">Book Movies</a>
+    </div>
+</li>
+
+<li><a href="citizenfeedback.html" ><font face="sans-serif" size="4">Feedback</font></a></li>
+<li><a href="about.html"><font face="sans-serif" size="4">About</font></a></li>
+
+<li class="dropdown" style="float: right;">
+    <a href="#" class="dropbtn"><font size="4" face="sans-serif">Welcome! </font></a>
+    <div class="dropdown-content">
+    <a href="viewprofile.jsp">Profile</a>
+	<form action="citizenlogout" method="post">
+	<input style="width: 100px;" type="submit" value="Logout"/></form>
+    </div>
+</li>
+
+</ul>
+
+
+</div>
+
+<br ><br ><br ><br ><br >
+
+<div align="center">
+<form action="viewtrains.jsp" method="post">
+<label>Source:</label>
+<select name="src">
+	<option> - src - </option>
+	<option value="Secunderabad">Secunderabad</option>
+	<option value="Hyderabad">Hyderabad</option>
+	<option value="Kazipet">Kazipet</option>
+	<option value="Warangal">Warangal</option>
+	<option value="Vijayawada">Vijayawada</option>
+	<option value="Guntur">Guntur</option>
+	<option value="Ongole">Ongole</option>
+</select>
+<br><br>
+<label>Destination:</label>
+<select name="dest">
+	<option> - dest - </option>
+	<option value="Secunderabad">Secunderabad</option>
+	<option value="Hyderabad">Hyderabad</option>
+	<option value="Kazipet">Kazipet</option>
+	<option value="Warangal">Warangal</option>
+	<option value="Vijayawada">Vijayawada</option>
+	<option value="Guntur">Guntur</option>
+	<option value="Ongole">Ongole</option>
+</select>
+<br><br>
+<label>DOJ(dd-mm-yy):</label><input type="text" maxlength="10"  name="doj" required/>
+<br><br>
+<input type="submit" value="View Available Trains"/>
+</form>
+</div>
+
+<br ><br ><br ><br ><br >
+
+
+<div name="bottomnav"   id="bottomnav">
+
+<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="contactus.html">Contact us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="faq.html">F.A.Q.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="privacypolicy.html">Privacy Policy</a>
+
+</div>
+
+
+</body>
+</html>

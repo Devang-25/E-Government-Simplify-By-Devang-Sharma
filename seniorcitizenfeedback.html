@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Send feedback to Admin" >
+<title>Send Feedback</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<style type="text/css">
+
+label{
+    display: inline-block;
+	overflow: hidden;
+    width: 150px;
+	font-family: sans-serif;
+	
+}
+
+input,select,textarea {
+  display: inline-block;
+  
+}
+
+
+.header{
+	text-align: center;
+	color: #000066;
+}
+
+.marquee1{
+	background-color:#f67480;
+	line-height: 30px;
+	max-height: 35px;
+	float: right;
+	width: 100%;
+}
+
+.marquee1 b{
+	color:;
+	margin:0px 10px;	
+}
+
+#bottomnav{
+	font-family:sans-serif;
+	background-color: #f2f2f2;
+	text-align: center;
+	color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font:sans-serif;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	font: sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.active {
+    background-color: red;
+}
+
+
+</style>
+
+</head>
+
+
+<body >
+
+<div class="topbar">
+
+
+</div>
+
+
+<hr >
+
+<div class="header" align="center">
+
+<font size="8" face="sans-serif" color="#000066">Send Feedback</font>
+
+<hr >
+
+<marquee scrollamount="10"  behavior="scroll" class="marquee1" >
+<b><font size="5" face="sans-serif" color="white">"Send Feedback to Admin"</font></b>
+</marquee>
+
+<hr >
+
+</div>
+
+<hr >
+
+<div class="topnav" >
+
+<ul>
+<li><a href="seniorcitizenhome.html" ><font face="sans-serif" size="4">Home</font></a></li>
+
+<li class="dropdown">
+    <a href="#" class="dropbtn"><font size="4" face="sans-serif">Services</font></a>
+    <div class="dropdown-content">
+    <a href="viewmeals.html">View Meals</a>
+    <a href="ordermeals.html">Order Meals</a>
+    <a href="viewmedicines.html">View Medicines</a>
+	<a href="ordermedicines.html">Order Medicines</a>
+    </div>
+</li>
+
+<li><a class="active" href="seniorcitizenfeedback.html"><font face="sans-serif"  size="4">Feedback</font></a></li>
+<li><a href="about.html"><font face="sans-serif"size="4">About</font></a></li>
+
+<li class="dropdown" style="float: right;">
+    <a href="#" class="dropbtn"><font size="4" face="sans-serif">Welcome!	</font></a>
+    <div class="dropdown-content">
+    <a href="viewprofile2.jsp">Profile</a>
+	<form action="citizenlogout" method="post">
+	<input type="submit" value="Logout"/></form>
+    </div>
+</li>
+
+</ul>
+
+</div>
+
+<br >
+
+<div class="body" >
+
+<form action="sendfeedback" method="POST" >
+
+<label>Select Service: </label><br >
+<select name="service" required autofocus>
+<option value="general" selected>General</option>
+<option value="meals" >Meals</option>
+<option value="medicines">Medicines</option>
+</select>
+
+<br >
+<br >
+<label>Feedback:</label><br >
+<textarea name="feedback" rows="15" cols="40" placeholder="Your feedback here.."></textarea>
+<br >
+<br >
+
+<input type="submit" value="Send Feedback">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
+</form>
+
+</div>
+
+<br >
+<br >
+<br >
+<br >
+<br >
+<br >
+	
+
+<div name="bottomnav"   id="bottomnav">
+
+<a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="contactus.html">Contact us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="faq.html">F.A.Q.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="privacypolicy.html">Privacy Policy</a>
+
+</div>
+
+
+
+</body>
+
+
+</html>

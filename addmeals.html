@@ -1,0 +1,214 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Add Meals</title>
+
+<style>
+
+
+label{
+    display: inline-block;
+	overflow: hidden;
+    float: center;
+    clear: left;
+    width: 150px;
+    text-align: left;
+	
+}
+
+input,select {
+  display: inline-block;
+  float: center;
+  clear: right;
+  text-align: left;
+}
+
+.top{
+	text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-family:Ubuntu;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	font-family: Ubuntu;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+label{
+    display: inline-block;
+	overflow: hidden;
+    float: center;
+    clear: left;
+    width: 150px;
+    text-align: left;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+input{
+	width: 150px;
+	padding: 5px 5px;
+	display: inline-block;
+	float: center;
+	clear: right;
+	text-align: left;
+	border: 1px solid black;
+    border-radius: 4px;
+	
+}
+
+input[type=text]:focus 
+{
+	border: 3px solid yellow;
+}
+
+
+select{
+	width: 90px;
+	display: inline-block;
+	float: center;
+	clear: right;
+	text-align: left;
+	border: 1px solid black;
+    border-radius: 4px
+}
+
+select:focus
+{
+	border: 2px solid yellow;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: white;
+	border: 2px solid black;
+    padding: 10px 10px;
+	width: 90px;
+    cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topnav" >
+
+<ul>
+<li><a href="adminhome.html" ><font face="Ubuntu" size="4">Home</font></a></li>
+
+<li class="dropdown">
+    <a href="#" class="dropbtn" style="background-color:red;"><font size="4" face="Ubuntu">Add Services</font></a>
+    <div class="dropdown-content">
+    <a href="addtrains.html">Add Trains</a>
+    <a href="addmovies.html">Add Movies</a>
+    <a href="addmeals.html">Add Meals</a>
+	<a href="addmedicines.html">Add Medicines</a>
+	<a href="viewordermeals.jsp">View Meal Orders</a>
+	<a href="viewordermedicines.jsp">View Medicine Orders</a>
+	<a href="viewbooktrains.jsp">View Train Bookings</a>
+	<a href="viewbookmovies.jsp">View Movie Bookings</a>
+	<a href="approveusers.jsp">Approve Users</a>
+    </div>
+</li>
+
+<li><a href="viewfeedback.jsp"><font face="Ubuntu" size="4">View Feedback</font></a></li>
+
+<li class="dropdown" style="float: right;">
+    <a href="#" class="dropbtn"><font size="4" face="Ubuntu">Welcome ADMIN!	</font></a>
+    <div class="dropdown-content">
+	<a href="index.html">Logout</a>
+    </div>
+</li>
+
+</ul>
+</div>
+
+<br >
+<h1 align="center">Add Meal</h1>
+<br >
+
+ 
+<div class="body" align="center">
+
+
+<form action="addmeals" method="POST">
+<label>Hotel Name:</label><input type="text" maxlength="30"  name="hotelname" required autofocus />
+<br >
+<br >
+<label>Available Meals:</label>
+<input style="width:45px;" type="checkbox" name="meal1" value="full">Full Meals
+<input style="width:45px;" type="checkbox" name="meal2" value="plate">Plate Meals
+<input style="width:45px;" type="checkbox" name="meal3" value="family">Family Pack
+<br >
+<br >
+
+<label>Hotel Timings: </label>
+<input type="text" name="timings"/>
+
+
+
+<br ><br ><br ><br >
+
+<input style="width:150px;" type="submit"  value="Add/Update" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" />
+
+</form>
+
+<hr >
+
+
+
+</div>
+
+</body>
+
+</html>
